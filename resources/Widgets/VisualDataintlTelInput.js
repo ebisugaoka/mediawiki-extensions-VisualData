@@ -91,7 +91,7 @@
 
 		if ( config.value ) {
 			// @see https://intl-tel-input.com/docs/methods
-			this.iti.setNumber(config.value);
+			this.iti.setNumber( config.value );
 		}
 	};
 

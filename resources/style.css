@@ -210,7 +210,6 @@ body > .oo-ui-windowManager,
 
 .mw-rcfilters-spinner.mw-rcfilters-spinner-inline {
 	margin: auto;
-	margin-top: auto !important;
 	position: static;
 	padding: 12px;
 	display: block !important;
