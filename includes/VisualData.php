@@ -2020,13 +2020,13 @@ class VisualData {
 		$revisionRecord = $pageUpdater->saveRevision( $comment, $flags );
 
 		// perform an additional null-edit if requested
-		if ( $doNullEdit && !$pageUpdater->isUnchanged() ) {
+		if ( $doNullEdit && $pageUpdater->wasRevisionCreated() ) {
 			$comment = CommentStoreComment::newUnsavedComment( '' );
 			$pageUpdater = $wikiPage->newPageUpdater( $user );
 			$pageUpdater->saveRevision( $comment, EDIT_SUPPRESS_RC | EDIT_AUTOSUMMARY );
 		}
 
-		// or !$pageUpdater->isUnchanged()
+		// or $pageUpdater->wasRevisionCreated()
 		return $revisionRecord !== null;
 	}
 
