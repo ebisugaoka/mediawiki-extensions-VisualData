@@ -57,7 +57,7 @@
 
 .VisualDataForm.VisualDataFormContext-EditData {
 	max-width: none;
-	background: #f8f9fa;
+	background: var( --color-surface-0, var( --background-color-base ) );
 }
 
 .visualdata-datatable {
@@ -84,12 +84,12 @@
 }
 
 .PanelPropertiesStack {
-	border: 1px solid #ccc;
+	border: var( --border-width-base ) solid var( --border-color-base );
 	margin-bottom: 16px;
 }
 
 .VisualDataFormWrapper .oo-ui-toolbar-position-top > .oo-ui-toolbar-bar {
-	border-bottom: medium;
+	border-bottom: var( --border-width-thick );
 }
 
 .PanelPropertiesStack-empty {
@@ -205,7 +205,7 @@
 
 body > .oo-ui-windowManager,
 .oo-ui-defaultOverlay {
-	font-size: 0.875em;
+	font-size: var( --font-size-small, 0.875rem );
 }
 
 .mw-rcfilters-spinner.mw-rcfilters-spinner-inline {
